@@ -11,8 +11,46 @@
 .TopLeft,
 .TopRight {
   flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .TopCenter {
   flex: 6;
+}
+
+.TopIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.TopImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.TopList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.TopListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.TopSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 30px;
 }
