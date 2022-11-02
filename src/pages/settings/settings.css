@@ -1,0 +1,7 @@
+.Settings {
+  display: flex;
+}
+
+.SettingsWrapper {
+  flex: 9;
+}
