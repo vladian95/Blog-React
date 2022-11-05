@@ -8,16 +8,17 @@ import Register from './pages/register/Register';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const user = false;
   return (
     <BrowserRouter>
       <TopBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="single" element={<Single />} />
-        <Route path="write" element={<Write />} />
-        <Route path="settings" element={<Settings />} />
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
+        <Route path="/register" element={user ? <Home /> : <Register />} />
+        <Route path="/write" element={user ? <Write /> : <Register />} />
+        <Route path="/settings" element={user ? <Settings /> : <Register />} />
+        <Route path="/login" element={user ? <Home /> : <Login />} />
+        <Route path="/post/:postid" element={<Single />} />
       </Routes>
     </BrowserRouter>
   );
